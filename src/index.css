@@ -1,13 +1,76 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.windows {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: row;
+  align-items: center;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.window {
+  display: flex;
+  margin: 50px 5px;
+  flex-direction: column;
+  width: 50%;
+  min-height: 300px;
+  height: auto;
+  background-color: rgb(212, 212, 212);
+  border-radius: 10px;
+  box-shadow: 5px 8px 5px #77777799;
+}
+
+.panel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: rgba(184, 117, 255, 0.671);
+  height: 20px;
+  border-radius: 10px 10px 0 0;
+}
+
+.buttons {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  margin-left: 10px;
+  width: 50px;
+  padding: 0;
+  border: none;
+}
+
+.button {
+  width: 10px;
+  height: 10px;
+  margin: 0 2px;
+  border-radius: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.054);
+  box-shadow: 1px 1px 1px #64646475;
+  transition: 0.2s;
+}
+.button:hover {
+  background-color: black;
+  transition: 0.2s;
+  transform-origin: 50% 60%;
+  cursor: pointer;
+}
+
+.red-button {
+  background-color: rgb(170, 8, 21);
+}
+.green-button {
+  background-color: rgb(124, 196, 33);
+}
+.yellow-button {
+  background-color: rgb(240, 180, 28);
+}
+
+.panel-text {
+  font-size: 10px;
+  color: rgb(255, 255, 255);
+}
+
+.dummy-span {
+  width: 60px;
+  height: 10px;
 }
